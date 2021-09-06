@@ -238,7 +238,7 @@ alternate_keys = {
     "page up": "pageup",
     "page down": "pagedown",
     "fap": "tab",
-        
+
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
@@ -252,4 +252,10 @@ ctx.lists["self.function_key"] = {
     f"F {default_f_digits[i]}": f"f{i + 1}" for i in range(12)
 }
 
+
+@mod.action_class
+class Actions:
+    def get_alphabet() -> dict:
+        """Provides the alphabet dictionary"""
+        return alphabet
 
