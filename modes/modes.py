@@ -1,4 +1,8 @@
 from talon import Context, Module, app, actions, speech_system
+from talon import actions, app
+def on_ready():
+    actions.speech.disable()
+app.register('launch', on_ready)
 
 mod = Module()
 
