@@ -3,7 +3,7 @@ from typing import Set
 from talon import Module, Context, actions, app
 import sys
 
-default_alphabet = "arc bat cop drum each fine gust hook sit jury crunch look made near odd pit quiz red sink trap ura vest whale lex yank zip".split(
+default_alphabet = "arc bat cop drum each fine gust hook sit jury crunch look made near oba pit qoo red sink trap ura vest whale ex why zip".split(
     " "
 )
 letters_string = "abcdefghijklmnopqrstuvwxyz"
@@ -174,7 +174,7 @@ symbol_key_words = {
     "tilde": "~",
     "bang": "!",
     "down score": "_",
-    "under score": "_",
+    "under": "_",
     "paren": "(",
     "L paren": "(",
     "left paren": "(",
@@ -198,6 +198,7 @@ symbol_key_words = {
     "amper": "&",
     "pipe": "|",
     "dubquote": '"',
+    "dupquote": '"',
     "double quote": '"',
 
     # Currencies
@@ -211,10 +212,10 @@ ctx.lists["self.punctuation"] = punctuation_words
 ctx.lists["self.symbol_key"] = symbol_key_words
 ctx.lists["self.number_key"] = dict(zip(default_digits, numbers))
 ctx.lists["self.arrow_key"] = {
-    "down": "down",
-    "left": "left",
-    "right": "right",
-    "up": "up",
+    "in": "down",
+    "past": "left",
+    "next": "right",
+    "out": "up",
 }
 
 simple_keys = [

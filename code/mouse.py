@@ -282,6 +282,9 @@ def on_pop(active):
 
 
 noise.register("pop", on_pop)
+def on_hiss(active):
+    ctrl.mouse_click()
+noise.register("hiss", on_hiss)
 
 
 def mouse_scroll(amount):
