@@ -138,7 +138,7 @@ punctuation_words = {
     "period": ".",
     "full stop": ".",
     "semicolon": ";",
-    "colon": ":",
+    "dubdot": ":",
     "forward slash": "/",
     "question mark": "?",
     "exclamation mark": "!",
@@ -236,6 +236,8 @@ alternate_keys = {
     'junk': 'backspace',
     "page up": "pageup",
     "page down": "pagedown",
+    "fap": "tab",
+        
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
