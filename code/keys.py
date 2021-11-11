@@ -3,14 +3,14 @@ from typing import Set
 from talon import Module, Context, actions, app
 import sys
 
-default_alphabet = "arc bat cop drum each fine gust hook sit jury crunch look made near oba pit qoo red sink trap ura vest whale ex why zip".split(
+default_alphabet = "arc bot cop drum echo fine gust hook sit jury crunch like made near oba pope quiz red sink trap ura vest whale xman why zip".split(
     " "
 )
 letters_string = "abcdefghijklmnopqrstuvwxyz"
 
-default_digits = "zero one two three four five six seven eight nine".split(" ")
+default_digits = "zero one two three four five six seven aid nine".split(" ")
 numbers = [str(i) for i in range(10)]
-default_f_digits = "one two three four five six seven eight nine ten eleven twelve".split(
+default_f_digits = "one two three four five six seven aid nine ten eleven twelve".split(
     " "
 )
 

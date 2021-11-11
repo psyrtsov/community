@@ -110,11 +110,11 @@ go last mark: user.vscode("bookmarks.jumpToPrevious")
 
 # Folding
 fold it: user.vscode("editor.fold")
-unfold it: user.vscode("editor.unfold")
+blow it: user.vscode("editor.unfold")
 fold those: user.vscode("editor.foldAllMarkerRegions")
-unfold those: user.vscode("editor.unfoldRecursively")
+blow those: user.vscode("editor.unfoldRecursively")
 fold all: user.vscode("editor.foldAll")
-unfold all: user.vscode("editor.unfoldAll")
+blow all: user.vscode("editor.unfoldAll")
 fold comments: user.vscode("editor.foldAllBlockComments")
 
 # Git / Github (not using verb-noun-adjective pattern, mirroring terminal commands.)
