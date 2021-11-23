@@ -3,7 +3,7 @@ from typing import Set
 from talon import Module, Context, actions, app
 import sys
 
-default_alphabet = "arc bot cop drum echo fine gust hook sit jury crunch like made near oba pope quiz red sink trap ura vest whale xman why zip".split(
+default_alphabet = "arc bit cop drum echo fine gust hook sit jury crunch like made near oba pope quiz red sink trap ura vest whale xman why zip".split(
     " "
 )
 letters_string = "abcdefghijklmnopqrstuvwxyz"
@@ -138,7 +138,7 @@ punctuation_words = {
     "period": ".",
     "full stop": ".",
     "semicolon": ";",
-    "dubdot": ":",
+    "dudot": ":",
     "forward slash": "/",
     "question mark": "?",
     "exclamation mark": "!",
@@ -176,6 +176,7 @@ symbol_key_words = {
     "down score": "_",
     "under": "_",
     "paren": "(",
+    "baren": "(",
     "L paren": "(",
     "left paren": "(",
     "R paren": ")",
