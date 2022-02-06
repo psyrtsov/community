@@ -20,9 +20,9 @@ port_mapping = {
     "com.jetbrains.datagrip": 8664,
     "com.jetbrains.goland-EAP": 8659,
     "com.jetbrains.goland": 8659,
-    "com.jetbrains.intellij-EAP": 63343,
+    "com.jetbrains.intellij-EAP": 8653,
     "com.jetbrains.intellij.ce": 8654,
-    "com.jetbrains.intellij": 63343,
+    "com.jetbrains.intellij": 8653,
     "com.jetbrains.PhpStorm": 8662,
     "com.jetbrains.pycharm": 8658,
     "com.jetbrains.rider": 8660,
@@ -30,16 +30,16 @@ port_mapping = {
     "com.jetbrains.rubymine-EAP": 8661,
     "com.jetbrains.WebStorm": 8663,
     "google-android-studio": 8652,
-    "idea64.exe": 63343,
-    "IntelliJ IDEA": 63343,
+    "idea64.exe": 8653,
+    "IntelliJ IDEA": 8653,
     "jetbrains-appcode": 8655,
     "jetbrains-clion": 8657,
     "jetbrains-datagrip": 8664,
     "jetbrains-goland-eap": 8659,
     "jetbrains-goland": 8659,
     "jetbrains-idea-ce": 8654,
-    "jetbrains-idea-eap": 63343,
-    "jetbrains-idea": 63343,
+    "jetbrains-idea-eap": 8653,
+    "jetbrains-idea": 8653,
     "jetbrains-phpstorm": 8662,
     "jetbrains-pycharm-ce": 8658,
     "jetbrains-pycharm": 8658,
@@ -59,7 +59,21 @@ port_mapping = {
 
 
 def _get_nonce(port, file_prefix):
-    return 'vcidea'
+    file_name = file_prefix + str(port)
+    try:
+        with open(os.path.join(tempfile.gettempdir(), file_name), "r") as fh:
+            return fh.read()
+    except FileNotFoundError as e:
+        try:
+            home = str(Path.home())
+            with open(os.path.join(home, file_name), "r") as fh:
+                return fh.read()
+        except FileNotFoundError as eb:
+            print(f"Could not find {file_name} in tmp or home")
+            return None
+    except IOError as e:
+        print(e)
+        return None
 
 
 def send_idea_command(cmd):
