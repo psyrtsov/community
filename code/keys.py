@@ -3,12 +3,12 @@ from typing import Set
 from talon import Module, Context, actions, app
 import sys
 
-default_alphabet = "arc bit cop drum ep fine gust hook sit jury crunch like made near oba pope quiz red sink trap ura vest whale xman why zip".split(
+default_alphabet = "arc byte cad drum yes fine gust hook sit jury crunch like made near oba pope quiz red sink trap ura vest whale xman why zip".split(
     " "
 )
 letters_string = "abcdefghijklmnopqrstuvwxyz"
 
-default_digits = "zero one two three four five six seven eit nine".split(" ")
+default_digits = "zero one two three four five six seven ait nine".split(" ")
 numbers = [str(i) for i in range(10)]
 default_f_digits = "one two three four five six seven aid nine ten eleven twelve".split(
     " "
@@ -221,7 +221,7 @@ ctx.lists["self.arrow_key"] = {
 
 simple_keys = {
     "end":"end",
-    "shlep":"enter",
+    "did":"enter",
     "escape":"escape",
     "home":"home",
     "insert":"insert",
@@ -237,7 +237,7 @@ alternate_keys = {
     'junk': 'backspace',
     "page up": "pageup",
     "page down": "pagedown",
-    "fap": "tab",
+    "dab": "tab",
 
 }
 # mac apparently doesn't have the menu key.

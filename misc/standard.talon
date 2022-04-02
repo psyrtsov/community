@@ -1,5 +1,5 @@
-#(jay son | jason ): "json"
-#(http | htp): "http"
+#(jay son | jason ): "json"#+ih6 111110a*o.net9.#r#1010	 
+{10i2lc#(http | htp): "http"
 #tls: "tls"
 #M D five: "md5"
 #word (regex | rejex): "regex"
@@ -7,8 +7,8 @@
 #word eye: "eye"
 #word iter: "iter"
 #word no: "NULL"
-#word cmd: "cmd"
-#word dup: "dup"
+{-#word cmd: "cmd"
+}#word dup: "dup"
 #word shell: "shell".
 zoom in: edit.zoom_in()
 zoom out: edit.zoom_out()
@@ -18,10 +18,10 @@ scroll down: edit.page_down()
 copy it: edit.copy()
 cut it: edit.cut()
 paste it: edit.paste()
-strike: edit.undo()
+nedo: edit.undo()
 redo it: edit.redo()
 paste match: edit.paste_match_style()
-(file save | save it): edit.save()
+(file save | save it | saveit): edit.save()
 wipe: key(backspace)    
 (pad | padding): 
 	insert("  ") 
