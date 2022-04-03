@@ -1,5 +1,5 @@
-#(jay son | jason ): "json"#+ih6 111110a*o.net9.#r#1010	 
-{10i2lc#(http | htp): "http"
+#(jay son | jason ): "json"
+#(http | htp): "http"
 #tls: "tls"
 #M D five: "md5"
 #word (regex | rejex): "regex"
@@ -7,8 +7,8 @@
 #word eye: "eye"
 #word iter: "iter"
 #word no: "NULL"
-{-#word cmd: "cmd"
-}#word dup: "dup"
+#word cmd: "cmd"
+#word dup: "dup"
 #word shell: "shell".
 zoom in: edit.zoom_in()
 zoom out: edit.zoom_out()
