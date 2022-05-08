@@ -1,7 +1,7 @@
 control mouse: user.mouse_toggle_control_mouse()
 zoom mouse: user.mouse_toggle_zoom_mouse()
 camera overlay: user.mouse_toggle_camera_overlay()
-run calibration: user.mouse_calibrate()	
+run calibration: user.mouse_calibrate()
 touch:
 	mouse_click(0)
 	# close the mouse grid if open
@@ -15,7 +15,7 @@ righty:
 	# close the mouse grid if open
 	user.grid_close()
 
-midclick: 
+midclick:
 	mouse_click(2)
 	# close the mouse grid
 	user.grid_close()
@@ -27,24 +27,24 @@ midclick:
 #option = alt
 #shift
 #super = windows key
-<user.modifiers> touch: 
+<user.modifiers> touch:
 	key("{modifiers}:down")
 	mouse_click(0)
 	key("{modifiers}:up")
 	# close the mouse grid
 	user.grid_close()
-<user.modifiers> righty: 
+<user.modifiers> righty:
 	key("{modifiers}:down")
 	mouse_click(1)
 	key("{modifiers}:up")
 	# close the mouse grid
 	user.grid_close()
-(dubclick | duke): 
+(dubclick | duke):
 	mouse_click()
 	mouse_click()
 	# close the mouse grid
 	user.grid_close()
-(tripclick | triplick): 
+(tripclick | triplick):
 	mouse_click()
 	mouse_click()
 	mouse_click()
@@ -109,3 +109,6 @@ wheel tiny right here:
     user.mouse_move_center_active_window()
     user.mouse_scroll_right(0.5)
 copy mouse position: user.copy_mouse_position()
+curse no:
+    # Command added 2021-12-13, can remove after 2022-06-01
+    app.notify("Please activate the user.mouse_cursor_commands_enable tag to enable this command")

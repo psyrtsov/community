@@ -12,7 +12,6 @@ mode: all
     user.help_hide()
     user.mouse_sleep()
     speech.disable()
-
     user.engine_sleep()
 ^go sleep [<phrase>]$: speech.disable()
 ^wake up$: speech.enable()
