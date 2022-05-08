@@ -3,7 +3,7 @@ from typing import Set
 from talon import Module, Context, actions, app
 import sys
 
-default_alphabet = "arc byte cad drum yes fine gust hook sit jury crunch like made near oba pope quiz red sink trap ura vest whale xman why zip".split(
+default_alphabet = "arc bis code drum yes fine gust hook sit jury crunch like made near oba pope quiz red sink trap ura vest whale xman why zip".split(
     " "
 )
 letters_string = "abcdefghijklmnopqrstuvwxyz"
@@ -221,7 +221,7 @@ ctx.lists["self.arrow_key"] = {
 
 simple_keys = {
     "end":"end",
-    "did":"enter",
+    "go":"enter",
     "escape":"escape",
     "home":"home",
     "insert":"insert",

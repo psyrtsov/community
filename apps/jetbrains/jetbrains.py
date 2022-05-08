@@ -31,7 +31,7 @@ port_mapping = {
     "com.jetbrains.WebStorm": 8663,
     "google-android-studio": 8652,
     "idea64.exe": 8653,
-    "IntelliJ IDEA": 8653,
+    "IntelliJ IDEA": 63343,
     "jetbrains-appcode": 8655,
     "jetbrains-clion": 8657,
     "jetbrains-datagrip": 8664,
@@ -59,21 +59,22 @@ port_mapping = {
 
 
 def _get_nonce(port, file_prefix):
-    file_name = file_prefix + str(port)
-    try:
-        with open(os.path.join(tempfile.gettempdir(), file_name), "r") as fh:
-            return fh.read()
-    except FileNotFoundError as e:
-        try:
-            home = str(Path.home())
-            with open(os.path.join(home, file_name), "r") as fh:
-                return fh.read()
-        except FileNotFoundError as eb:
-            print(f"Could not find {file_name} in tmp or home")
-            return None
-    except IOError as e:
-        print(e)
-        return None
+    return 'vcidea'
+    # file_name = file_prefix + str(port)
+    # try:
+    #     with open(os.path.join(tempfile.gettempdir(), file_name), "r") as fh:
+    #         return fh.read()
+    # except FileNotFoundError as e:
+    #     try:
+    #         home = str(Path.home())
+    #         with open(os.path.join(home, file_name), "r") as fh:
+    #             return fh.read()
+    #     except FileNotFoundError as eb:
+    #         print(f"Could not find {file_name} in tmp or home")
+    #         return None
+    # except IOError as e:
+    #     print(e)
+    #     return None
 
 
 def send_idea_command(cmd):
