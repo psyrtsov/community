@@ -1,5 +1,4 @@
-from talon import Context, Module, app, actions, speech_system
-from talon import actions, app
+from talon import Module, actions, app, speech_system
 def on_ready():
     actions.speech.disable()
 app.register('launch', on_ready)

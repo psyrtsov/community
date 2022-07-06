@@ -1,7 +1,4 @@
-from typing import Set
-
-from talon import Module, Context, actions, app
-import sys
+from talon import Context, Module, actions, app
 
 
 default_alphabet = "arc bus code drum yes fine gust hook sit jury crunch like made near oba pope quiz red sink trap ura vest whale xman why zip".split(
@@ -119,7 +116,7 @@ modifier_keys = {
     "shift": "shift",  #'sky':     'shift',
     "super": "super",
 }
-if app.platform  == "mac":
+if app.platform == "mac":
     modifier_keys["command"] = "cmd"
     modifier_keys["option"] = "alt"
 ctx.lists["self.modifier_key"] = modifier_keys
@@ -151,7 +148,6 @@ punctuation_words = {
     "at sign": "@",
     "and sign": "&",
     "ampersand": "&",
-
     # Currencies
     "dollar sign": "$",
     "pound sign": "£",
@@ -202,7 +198,6 @@ symbol_key_words = {
     "dubquote": '"',
     "dupquote": '"',
     "double quote": '"',
-
     # Currencies
     "dollar": "$",
     "pound": "£",
@@ -259,7 +254,7 @@ class Actions:
     def move_cursor(s: str):
         """Given a sequence of directions, eg. 'left left up', moves the cursor accordingly using edit.{left,right,up,down}."""
         for d in s.split():
-            if d in ('left','right','up','down'):
+            if d in ("left", "right", "up", "down"):
                 getattr(actions.edit, d)()
             else:
-                raise RuntimeError(f'invalid arrow key: {d}')
+                raise RuntimeError(f"invalid arrow key: {d}")
