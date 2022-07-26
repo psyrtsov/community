@@ -14,6 +14,7 @@ smart: user.idea("action SmartTypeCompletion")
 (done | finish): user.idea("action EditorCompleteStatement")
 # Copying
 grab <number>: user.idea_grab(number)
+grab: key(ctrl-;)
 # Actions
 (action | please): user.idea("action GotoAction")
 (action | please) <user.text>:
