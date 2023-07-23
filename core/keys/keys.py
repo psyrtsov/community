@@ -7,7 +7,7 @@ def setup_default_alphabet():
     """set up common default alphabet.
 
     no need to modify this here, change your alphabet using alphabet.csv"""
-    initial_default_alphabet = "arc bus code drum yes fine gust hook sit jury crunch like made near oba pope quiz red sink trap ura vest whale xman why zip".split(
+    initial_default_alphabet = "arc bus code drum yes fine gust hook sit jury crunch like made near oba papa quiz red sink trap ura vest whale xman why zip".split(
     " "
     )
     initial_letters_string = "abcdefghijklmnopqrstuvwxyz"
@@ -241,7 +241,7 @@ ctx.lists["self.arrow_key"] = {
 
 simple_keys = {
     "end":"end",
-    "go":"enter",
+    "zoom":"enter",
     "escape":"escape",
     "home":"home",
     "insert":"insert",

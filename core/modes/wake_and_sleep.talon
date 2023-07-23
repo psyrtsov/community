@@ -16,3 +16,6 @@ mode: all
 ^go sleep [<phrase>]$: speech.disable()
 ^wake up$: speech.enable()
 
+^go whisper$:
+  user.engine_mimic('sleep all')  
+  user.system_command("c:/git/whisper_mic/listen.bat")
